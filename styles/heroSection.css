@@ -1,0 +1,37 @@
+.hero-section {
+    position: relative;
+    margin: 0 auto;
+    width: 73.96%;
+    min-width: 320px;
+    margin-bottom: 135px;
+}
+
+.section-wrapper {
+    position: relative;
+    height: 630px;
+}
+
+.hero-section .hero-section__title {
+    position: absolute;
+    background-color: #fff;
+    padding: 10.72% 0; /**  */
+    width: 56%;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.hero-section .hero-section__img {
+    width: 100%;
+}
+
+.hero-section h1 {
+    margin-bottom: 14px;
+}
+
+.hero-section h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
