@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+h1, h2 {
+    font-family: 'Playfair', serif;
+    font-weight: 500;
+    font-size: 86px;
+}
+
+h3 {
+    text-transform: uppercase;
+}
+
+.section-one h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+.section-two p {
+    color: #0d0d0d;
+}
+
+.section-two p:before {
+    content: '\2013';
+    display: block;
+    color: #0d0d0d;
+}
+
+.sub-title {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+p, ul {
+    font-family: 'Bitter-Regular';
+}
+
+p {
+    font-size: 2rem;
+}
+
+ul {
+    font-size: 2.4rem;
+}
+
+.section-two__text ul li {
+    font-size: 1.13rem;
+    font-weight: 500;
+    display: inline-block;
+}
+
+.section-two__text ul li:not(li:last-child):after {
+    content: '\00A0\00A0\002F';
+}
