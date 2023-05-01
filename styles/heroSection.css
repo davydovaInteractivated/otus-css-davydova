@@ -1,14 +1,14 @@
 .hero-section {
-    position: relative;
     margin: 0 auto;
-    width: 73.96%;
+    width: 100%;
     min-width: 320px;
     margin-bottom: 135px;
 }
 
-.section-wrapper {
+.hero-section .hero-section__wrapper {
     position: relative;
-    height: 630px;
+    max-width: 73.96%;
+    margin: 0 auto;
 }
 
 .hero-section .hero-section__title {
