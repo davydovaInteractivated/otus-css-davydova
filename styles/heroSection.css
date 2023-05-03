@@ -8,6 +8,7 @@
 .hero-section .hero-section__wrapper {
     position: relative;
     max-width: 73.96%;
+    min-height: 630px;
     margin: 0 auto;
 }
 
@@ -25,6 +26,7 @@
 
 .hero-section .hero-section__img {
     width: 100%;
+    min-height: 630px;
 }
 
 .hero-section h1 {
