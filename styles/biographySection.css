@@ -9,8 +9,8 @@
 
 .biography-section .biography-section__wrapper {
     width: 81.6%;
+    height: 840px;
     display: flex;
-    gap: 12.5%;
     flex-wrap: wrap;
 }
 
@@ -18,6 +18,7 @@
     position: relative;
     flex-basis: 47.06%;
     min-height: 50vh;
+    margin-right: 12.5%;
     background-image: url("/assets/img/biography-section/jared-weiss-P3cB0ynqYBw-unsplash 1.jpg");
     background-position: 50% 40%;
     background-repeat: no-repeat;
