@@ -12,6 +12,13 @@
     margin: 0 auto;
 }
 
+.hero-section .hero-section__img {
+    background-image: url('/assets/img/hero-section/inside-weather-Uxqlfigh6oE-unsplash 1.jpg');
+    background-position: start;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .hero-section .hero-section__title {
     position: absolute;
     background-color: #fff;

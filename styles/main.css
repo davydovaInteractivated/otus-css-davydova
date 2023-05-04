@@ -7,6 +7,9 @@
 /* Hero Section */
 @import './heroSection.css';
 
+/* Biography Section */
+@import './biographySection.css';
+
 body {
     font-family: 'Roboto', sans-serif;
     font-weight: normal;
@@ -24,22 +27,7 @@ h3 {
     text-transform: uppercase;
 }
 
-.section-two p {
-    color: #0d0d0d;
-}
-
-.section-two p:before {
-    content: '\2013';
-    display: block;
-    color: #0d0d0d;
-}
-
-.sub-title {
-    font-weight: 700;
-    font-size: 20px;
-}
-
-p, ul {
+p {
     font-family: 'Bitter-Regular';
 }
 
@@ -47,16 +35,6 @@ p {
     font-size: 2rem;
 }
 
-ul {
+.section-five ul {
     font-size: 2.4rem;
-}
-
-.section-two__text ul li {
-    font-size: 1.13rem;
-    font-weight: 500;
-    display: inline-block;
-}
-
-.section-two__text ul li:not(li:last-child):after {
-    content: '\00A0\00A0\002F';
 }

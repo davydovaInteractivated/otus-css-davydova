@@ -1,0 +1,67 @@
+.biography-section {
+    width: 100%;
+    min-width: 320px;
+    margin-bottom: 135px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.biography-section .biography-section__wrapper {
+    width: 81.6%;
+    display: flex;
+    gap: 12.5%;
+    flex-wrap: wrap;
+}
+
+.biography-section .biography-section__wrapper .biography-section__img {
+    position: relative;
+    flex-basis: 47.06%;
+    min-height: 50vh;
+    background-image: url("/assets/img/biography-section/jared-weiss-P3cB0ynqYBw-unsplash 1.jpg");
+    background-position: 50% 40%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.biography-section .biography-section__wrapper .biography-section__img .sub-title {
+    font-weight: 700;
+    font-size: 20px;
+    transform: rotate(-90deg);
+    position: absolute;
+    top: 34px;
+    right: -82px;
+}
+
+.biography-section__wrapper p {
+    color: #0d0d0d;
+}
+
+.biography-section__wrapper p:before {
+    content: '\2013';
+    display: block;
+    color: #0d0d0d;
+}
+
+.biography-section__text {
+    align-self: center;
+    flex-basis: 40.44%;
+}
+
+.biography-section__text h2 {
+    margin-bottom: 25px;
+}
+
+.biography-section__text ul {
+    margin-bottom: 65px;
+}
+
+.biography-section__text ul li {
+    font-size: 1.13rem;
+    font-weight: 500;
+    display: inline-block;
+}
+
+.biography-section__text ul li:not(li:first-child, li:last-child):after {
+    content: '\00A0\00A0\002F';
+}
