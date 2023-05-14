@@ -176,6 +176,7 @@ nav {
 }
 
 .testimonials__title {
+    font-size: 1.24rem;
     grid-row: 1;
     grid-column: 1/4;
 }
