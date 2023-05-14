@@ -102,15 +102,12 @@ nav {
 .biography__wrapper {
     width: 81.6%;
     max-width: 1175px;
-    min-height: 840px;
     display: flex;
-    flex-wrap: wrap;
     align-items: flex-start;
 }
 
 .biography__img {
     width: 47.06%;
-    align-self: stretch;
     min-height: 400px;
 }
 
