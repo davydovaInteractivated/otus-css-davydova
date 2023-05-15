@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
+/* Navigation */
+@import './nav.css';
+
+/* Hero Section */
+@import './heroSection.css';
+
 body {
     font-family: 'Roboto', sans-serif;
     font-weight: normal;
@@ -11,16 +17,11 @@ body {
 h1, h2 {
     font-family: 'Playfair', serif;
     font-weight: 500;
-    font-size: 86px;
+    font-size: 5.4rem;
 }
 
 h3 {
     text-transform: uppercase;
-}
-
-.section-one h2 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
 }
 
 .section-two p {
