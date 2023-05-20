@@ -93,7 +93,7 @@ nav {
 .biography {
     width: 100%;
     min-width: 320px;
-    margin-bottom: 135px;
+    margin-bottom: 169px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -157,3 +157,109 @@ nav {
     color: #0d0d0d;
 }
 /* Biography Section --end */
+
+/* Designers Section --start */
+.designers {
+    margin-bottom: 258px;
+    padding-left: 30px;
+    max-width: 1440px;
+    width: 94.84%;
+    overflow: auto;
+}
+
+.designers__wrapper {
+    width: 100%;
+    min-width: 1337px;
+    margin: 0 auto;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(4, calc((100% - 90px) / 4));
+    grid-auto-columns: calc((100% - 90px) / 4);
+}
+
+.designers__title {
+    transform: rotate(-90deg) translate(-112px, -6px);
+    display: inline-block;
+    grid-row: 1;
+    grid-column: 3/5;
+    align-self: end;
+    justify-self: center;
+}
+
+.designers__card {
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+}
+
+.designers__card-main {
+    grid-column: span 2;
+}
+
+.designers__card-main .designers__card-description {
+    transform: translateX(50%);
+}
+
+.designers__card-photo {
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+.designers__card-title {
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+/* Designers Section --start */
+
+/* Testimonials Section --start */
+.testimonials {
+    width: 81.8%;
+    max-width: 1440px;
+    margin: 0 auto 134px;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 34px repeat(2, auto);
+    grid-template-rows: repeat(4, auto);
+}
+
+.testimonials__title {
+    font-size: 1.24rem;
+    grid-row: 1;
+    grid-column: 1/4;
+}
+
+.testimonials__img {
+    grid-column: 2;
+    grid-row: 2/5;
+    width: 100%;
+}
+
+.testimonials__link {
+    width: fit-content;
+    transform: rotate(-90deg);
+    grid-column: 1;
+    align-self: center;
+    justify-self: center;
+}
+
+.testimonials__paragraph {
+    text-align: center;
+    width: 221px;
+    align-self: center;
+    justify-self: center;
+    grid-column: 3;
+    grid-row: 2/5;
+}
+
+.testimonials__paragraph-text {
+    margin-bottom: 42px;
+}
+
+.testimonials__link-a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+/* Testimonials Section --end */
