@@ -162,13 +162,14 @@ nav {
 .designers {
     margin-bottom: 258px;
     padding-left: 30px;
+    max-width: 1440px;
+    width: 94.84%;
+    overflow: auto;
 }
 
 .designers__wrapper {
-    max-width: 1440px;
-    width: 94.84%;
+    width: 100%;
     min-width: 1337px;
-    overflow: auto;
     margin: 0 auto;
     display: grid;
     gap: 30px;
