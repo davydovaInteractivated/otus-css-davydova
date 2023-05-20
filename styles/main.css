@@ -11,18 +11,10 @@ h1 {
     font-size: 5.4rem;
 }
 
-/* h3 {
-    text-transform: uppercase;
-} */
-
 p {
     font-family: 'Bitter-Regular';
     font-size: 2rem;
 }
-
-/* .section-five ul {
-    font-size: 2.4rem;
-} */
 
 /* Navigation --start */
 nav {
@@ -263,3 +255,57 @@ nav {
     cursor: pointer;
 }
 /* Testimonials Section --end */
+
+/* Strong Points Section --start */
+.strong-points {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 162px;
+    overflow: auto;
+    display: grid;
+    gap: 30px;
+    align-items: flex-end;
+    grid-template-columns: repeat(2, 351px) 395px 351px;
+    grid-template-rows: repeat(2, auto);
+}
+
+.strong-points__title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    grid-row: 1;
+    grid-column: 1/5;
+    transform: rotate(-90deg);
+    width: fit-content;
+    position: relative;
+    top: 62px;
+    left: 328px;
+}
+
+.strong-points__img {
+    flex-basis: 351px;
+}
+
+.strong-points__list-wrapper {
+    flex-basis: 395px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.strong-points__list-title {
+    font-family: 'Playfair', serif;
+    font-weight: 500;
+    font-size: 5.4rem;
+    margin-bottom: 28px;
+}
+
+.strong-points__list {
+    flex-basis: 395px;
+}
+
+.strong-points__list-item {
+    font-family: 'Bitter-Regular';
+    font-size: 2.12rem;
+}
+/* Strong Points Section --end */
