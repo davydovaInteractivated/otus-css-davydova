@@ -93,7 +93,7 @@ nav {
 .biography {
     width: 100%;
     min-width: 320px;
-    margin-bottom: 135px;
+    margin-bottom: 169px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -160,7 +160,55 @@ nav {
 
 /* Designers Section --start */
 .designers {
-    margin-bottom: 134px;
+    margin-bottom: 258px;
+    padding-left: 30px;
+    max-width: 1440px;
+    width: 94.84%;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+.designers__wrapper {
+    width: 100%;
+    min-width: 1337px;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(4, calc((100% - 90px) / 4));
+    grid-auto-columns: calc((100% - 90px) / 4);
+}
+
+.designers__title {
+    transform: rotate(-90deg) translate(-112px, -6px);
+    display: inline-block;
+    grid-row: 1;
+    grid-column: 3/5;
+    align-self: end;
+    justify-self: center;
+}
+
+.designers__card {
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+}
+
+.designers__card-main {
+    grid-column: span 2;
+}
+
+.designers__card-main .designers__card-description {
+    transform: translateX(50%);
+}
+
+.designers__card-photo {
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+.designers__card-title {
+    font-size: 1rem;
+    text-transform: uppercase;
 }
 /* Designers Section --start */
 
