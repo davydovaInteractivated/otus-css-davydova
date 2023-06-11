@@ -60,7 +60,7 @@ nav {
         text-decoration: none;
         color: inherit;
         font-size: 2.5rem;
-        font-family: 'Bitter';
+        font-family: 'Butler';
     }
 }
 
@@ -349,7 +349,7 @@ nav {
 
 @media (max-width: 550px) {
     .biography__text-paragraph {
-        font-family: 'Bitter-Thin';
+        font-family: 'Bitter-Light';
         font-size: 1.875rem;
         margin-bottom: 41px;
     }
@@ -584,10 +584,10 @@ nav {
 
 @media (max-width: 550px) {
     .testimonials__paragraph-text {
-        font-family: 'Bitter';
+        font-family: 'Bitter-Light';
         font-size: 1.875rem;
         margin: 0 auto 24px;
-        width: 92%;
+        width: 80%;
         align-self: center;
     }
 }
@@ -715,9 +715,12 @@ nav {
     }
 }
 
+.strong-points__list-item {
+    font-family: 'Bitter-Regular';
+}
+
 @media (max-width: 550px) {
     .strong-points__list-item {
-        font-family: 'Bitter-Light';
         font-size: 1.5rem;
         line-height: 1.5;
     }
@@ -725,7 +728,6 @@ nav {
 
 @media (min-width: 551px) {
     .strong-points__list-item {
-        font-family: 'Bitter-Regular';
         font-size: 2.12rem;
     }
 }
