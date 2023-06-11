@@ -195,13 +195,13 @@ nav {
 
 @media (max-width: 550px) {
     .biography {
-        margin-bottom: 80px;
+        margin: 0 auto 80px;
     }
 }
 
 @media (min-width: 551px) {
     .biography {
-        margin-bottom: 169px;
+        margin: 0 auto 169px;
     }
 }
 
