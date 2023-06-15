@@ -4,7 +4,12 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: normal;
     font-size: 16px;
-    line-height: 1.2;
+    line-height: 1.2;   
+}
+
+/* Полоса прокрутки */
+body::-webkit-scrollbar-track {
+    background: transparent;
 }
 
 h1 {
@@ -71,6 +76,10 @@ nav {
         font-size: 2.5rem;
         font-family: 'Butler';
     }
+
+    .nav__list a:active {
+        text-decoration: underline;
+    }
 }
 
 @media (min-width: 551px) {
@@ -118,7 +127,7 @@ nav {
 }
 
 .hero__img {
-    background-image: url('/assets/img/inside-weather-Uxqlfigh6oE-unsplash 1.jpg');
+    background-image: url('/assets/img/inside-weather.jpg');
     background-position: start;
     background-repeat: no-repeat;
     background-size: cover;
@@ -382,23 +391,20 @@ nav {
 .designers {
     min-width: 320px;
     max-width: 1440px;
-    margin: 0 auto;
     overflow: auto;
 }
 
 @media (max-width: 550px) {
     .designers {
         margin-bottom: 80px;
-        width: calc(100% - 36px);
     }
 }
 
 @media (min-width: 551px) {
     .designers {
         padding-left: 30px;
-        margin-bottom: 150px;
+        margin: 0 auto 150px;
         width: 94.84%;
-        padding-left: 30px;
     }
 }
 
@@ -429,7 +435,7 @@ nav {
 
 @media (min-width: 551px) {
     .designers__title {
-        transform: rotate(-90deg) translate(-112px, -6px);
+        transform: rotate(-90deg) translate(-94px, -12px);
         display: inline-block;
         grid-column: 3/5;
         align-self: end;
@@ -440,6 +446,7 @@ nav {
 @media (max-width: 550px) {
     .designers__title {
         font-size: 1.125rem;
+        margin-left: 18px;
     }
 }
 
@@ -454,6 +461,10 @@ nav {
     .designers__card {
         overflow: hidden;
     }
+}
+
+.designers__card-main {
+    margin-left: 18px;
 }
 
 @media (min-width: 551px) {
