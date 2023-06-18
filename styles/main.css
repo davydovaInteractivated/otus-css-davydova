@@ -59,6 +59,11 @@ nav {
         cursor: pointer;
         border: none;
         background: none;
+        transition: opacity .3s ease-in-out;
+    }
+
+    .nav__menu-btn:hover {
+        opacity: .4;
     }
 }
 
@@ -75,10 +80,18 @@ nav {
         color: inherit;
         font-size: 2.5rem;
         font-family: 'Butler';
+        transition: text-decoration .3s ease-in-out;
+        transition: opacity .3s ease-in-out;
+    }
+
+    .nav__list a:focus {
+        text-decoration: underline;
+        opacity: .7;
     }
 
     .nav__list a:active {
         text-decoration: underline;
+        opacity: .7;
     }
 }
 
@@ -693,6 +706,16 @@ nav {
 @media (max-width: 550px) {
     .strong-points__img {
         height: 450px;
+    }
+}
+
+@media (min-width: 551px) {
+    .strong-points__img {
+        transition: transform .3s ease-out;
+    }
+
+    .strong-points__img:hover {
+        transform: scale(.9);
     }
 }
 
