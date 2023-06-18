@@ -105,7 +105,7 @@ nav {
 /* Hero Section --start */
 .hero {
     width: 100%;
-    min-width: 320px;
+    min-width: calc(320px + 36px);
 }
 
 @media (max-width: 550px) {
@@ -218,7 +218,7 @@ nav {
 /* Biography Section --start */
 .biography {
     width: 100%;
-    min-width: 320px;
+    min-width: calc(320px + 36px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -402,7 +402,7 @@ nav {
 
 /* Designers Section --start */
 .designers {
-    min-width: 320px;
+    min-width: calc(320px + 36px);
     max-width: 1440px;
     overflow: auto;
 }
@@ -515,7 +515,7 @@ nav {
 
 /* Testimonials Section --start */
 .testimonials {
-    min-width: 320px;
+    min-width: calc(320px + 36px);
     max-width: 1440px;
     display: grid;
     gap: 30px;
@@ -648,7 +648,7 @@ nav {
 
 /* Strong Points Section --start */
 .strong-points {
-    min-width: 320px;
+    min-width: calc(320px + 36px);
     max-width: 1440px;
     width: 100%;
     margin: 0 auto;
