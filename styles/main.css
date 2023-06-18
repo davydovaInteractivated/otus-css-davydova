@@ -592,6 +592,10 @@ nav {
         transform: rotate(-90deg);
         grid-column: 1;
     }
+
+    .testimonials__link-a:hover {
+        text-decoration: underline;
+    }
 }
 
 .testimonials__paragraph {
