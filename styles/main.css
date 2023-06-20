@@ -18,37 +18,37 @@ p {
 }
 
 /** BEM */
-.title-big {
+.title_big {
     font-family: 'Playfair', serif;
 }
 
 @media (max-width: 550px) {
-    .title-big {
+    .title_big {
         font-weight: 400;
         font-size: 4rem;
     }
 }
 
 @media (min-width: 551px) {
-    .title-big {
+    .title_big {
         font-weight: 500;
         font-size: 5.4rem;
     }
 }
 
-.title-small {
+.title_small {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
 }
 
 @media (max-width: 550px) {
-    .title-small {
+    .title_small {
         font-size: 1.125rem;
     }
 }
 
 @media (min-width: 551px) {
-    .title-small {
+    .title_small {
         font-size: 1.25rem;
     }
 }
@@ -221,13 +221,13 @@ nav {
 }
 
 @media (max-width: 550px) {
-    .hero__title-big {
+    .hero__title_big {
         font-weight: 400;
         font-size: 4.4rem;
     }
 }
 
-.hero__title-small {
+.hero__title_small {
     font-weight: 500;
 }
 /* Hero Section --end */
