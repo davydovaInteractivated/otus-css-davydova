@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/fonts.css">
@@ -13,9 +13,16 @@
 </head>
 <body>
     <nav>
-        <button class="nav__menu-btn" type="menu">
+        <button class="nav__menu-btn" type="button">
             <img src="assets/icons/Menuburger.svg" alt="site menu">
         </button>
+
+        <div class="nav__list">
+            <a href="#biography">b</a>
+            <a href="#designers">d</a>
+            <a href="#testimonials">t</a>
+            <a href="#strongPoints">s</a>
+        </div>
     </nav>
     <main>
         <section class="hero">
@@ -28,14 +35,18 @@
             </div>
         </section>
 
-        <section class="biography">
+        <section id="biography" class="biography">
             <div class="biography__wrapper">
-                <img class="biography__img" src="/assets/img/jared-weiss-P3cB0ynqYBw-unsplash 1.jpg" alt="katya mills photo" />
+                <picture class="biography__img">
+                    <source media="(max-width:550px)" srcset="/assets/img/katya_mills_full_450.jpg">
+                    <img src="/assets/img/katya_mills_full.jpg" alt="katya mills photo" style="width: 100%;">
+                </picture>
+
                 <h2 class="biography__title">Biography</h2>
                 <div class="biography__text">
-                    <h3 class="biography__text-title">Katya<br/>Mills</h3>
+                    <h3 class="biography__text-title">Katya <br>Mills</h3>
                     <ul class="biography__text-list">
-                        <li class="biography__text-list_item">Art Director</li><br/>
+                        <li class="biography__text-list_item">Art Director<br></li>
                         <li class="biography__text-list_item">Scenography</li>
                         <li class="biography__text-list_item">Styling</li>
                         <li class="biography__text-list_item">Creative Photography</li>
@@ -46,12 +57,12 @@
             </div>
         </section>
 
-        <section class="designers">
+        <section id="designers" class="designers">
             <div class="designers__wrapper">
                 <h2 class="designers__title">Designers</h2>
 
                 <div class="designers__card designers__card-main">
-                    <img class="designers__card-photo" src="assets/img/spurwing-agency-r6LceZ3ckpM-unsplash 1.jpg" alt="image">
+                    <img class="designers__card-photo" src="assets/img/spurwing-agency.jpg" alt="image">
                     <div class="designers__card-description">
                         <h3 class="designers__card-title">Jess Wonder</h3>
                         <div><strong>From/</strong>&nbsp;Be more flower</div>
@@ -60,7 +71,7 @@
                 </div>
 
                 <div class="designers__card">
-                    <img class="designers__card-photo" src="assets/img/stil-P1jQzyvqfns-unsplash 1.jpg" alt="image">
+                    <img class="designers__card-photo" src="assets/img/stil.jpg" alt="image">
                     <div class="designers__card-description">
                         <h3 class="designers__card-title">Kameron Clein</h3>
                         <div><strong>From/</strong>&nbsp;Be more flower</div>
@@ -69,7 +80,7 @@
                 </div>
 
                 <div class="designers__card">
-                    <img class="designers__card-photo" src="assets/img/stil-_mvSe9q8_n4-unsplash 1.jpg" alt="image">
+                    <img class="designers__card-photo" src="assets/img/stil2.jpg" alt="image">
                     <div class="designers__card-description">
                         <h3 class="designers__card-title">Louisse Red</h3>
                         <div><strong>From/</strong>&nbsp;Be more flower</div>
@@ -79,36 +90,38 @@
             </div>
         </section>
 
-        <section class="testimonials">
+        <section id="testimonials" class="testimonials">
             <h2 class="testimonials__title">Testimonials</h2>
 
-            <!-- <div class="testimonials__link-wrapper"></div> -->
-            <div class="testimonials__link">
-                <strong>Creativity</strong>
-                <a class="testimonials__link-a" href="https://www.whitepapers.com">www.whitepapers.com</a>
-            </div>
-            <div class="testimonials__link">
-                <strong>Creativity</strong>
-                <a class="testimonials__link-a" href="https://www.whitepapers.com">www.whitepapers.com</a>
-            </div>
             <div class="testimonials__link">
                 <strong>Website</strong>
                 <a class="testimonials__link-a" href="https://www.whitepapers.com">www.whitepapers.com</a>
             </div>
+            <div class="testimonials__link">
+                <strong>Creativity</strong>
+                <a class="testimonials__link-a" href="https://www.whitepapers.com">www.whitepapers.com</a>
+            </div>
+            <div class="testimonials__link">
+                <strong>Creativity</strong>
+                <a class="testimonials__link-a" href="https://www.whitepapers.com">www.whitepapers.com</a>
+            </div>
 
-            <img class="testimonials__img" src="assets/img/keghan-crossland-ZZxmc66SjfM-unsplash 1.jpg" alt="testimonials image 1">
+            <img class="testimonials__img" src="assets/img/keghan-crossland.jpg" alt="testimonials image 1">
 
             <div class="testimonials__paragraph">
                 <p class="testimonials__paragraph-text">I just really want to do good work and work with some great people, people who challenge me.</p>
-                <img src="assets/img/sinitta-leunen-YaReHIzNdRw-unsplash 1.jpg" alt="testimonials image 2">
+                <picture class="testimonials__paragraph-img">
+                    <source media="(max-width:550px)" srcset="/assets/img/sinitta-leunen-450.jpg">
+                    <img src="assets/img/sinitta-leunen-full.jpg" alt="testimonials image 2" style="width: 100%;">
+                </picture>
             </div>
         </section>
 
-        <section class="strong-points">
+        <section id="strongPoints" class="strong-points">
             <h2 class="strong-points__title">Strong points</h2>
 
-            <img class="strong-points__img" src="assets/img/dawid-liberadzki-vPFbVB7DPZI-unsplash 1.jpg" alt="image">
-            <img class="strong-points__img" src="assets/img/avery-klein-JaXs8Tk5Iww-unsplash 1.jpg" alt="image">
+            <img class="strong-points__img" src="assets/img/dawid-liberadzki.jpg" alt="image">
+            <img class="strong-points__img" src="assets/img/avery-klein.jpg" alt="image">
 
             <div class="strong-points__list-wrapper">
                 <h3 class="strong-points__list-title">Strengths</h3>
@@ -127,7 +140,7 @@
                     <li class="strong-points__list-item">Creativity</li>
                 </ul>
             </div>
-            <img class="strong-points__img" src="assets/img/avery-klein-JaXs8Tk5Iww-unsplash 1.jpg" alt="image">
+            <img class="strong-points__img" src="assets/img/avery-klein.jpg" alt="image">
         </section>
     </main>
 </body>
