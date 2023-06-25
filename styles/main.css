@@ -133,11 +133,6 @@ nav {
 /* Navigation --end */
 
 /* Hero Section --start */
-.hero {
-    width: 100%;
-    min-width: calc(320px + 36px);
-}
-
 @media (max-width: 550px) {
     .hero {
         margin-bottom: 80px;
@@ -150,25 +145,6 @@ nav {
     }
 }
 
-.hero__wrapper {
-    position: relative;
-    max-width: 1065px;
-    min-height: 630px;
-    margin: 0 auto;
-}
-
-@media (max-width: 550px) {
-    .hero__wrapper {
-        width: 100%;
-    }
-}
-
-@media (min-width: 551px) {
-    .hero__wrapper {
-        width: 73.96%;
-    }
-}
-
 .hero__img {
     background-image: url('/assets/img/inside-weather.jpg');
     background-position: left;
@@ -176,15 +152,9 @@ nav {
     background-size: cover;
 }
 
-.hero__title-wrapper {
-    background-color: #fff;
-    text-align: center;
-}
-
 @media (max-width: 550px) {
     .hero__title-wrapper {
         padding: 28.77% 0;
-        width: 100%;
     }
 }
 
@@ -192,16 +162,11 @@ nav {
     .hero__title-wrapper {
         position: absolute;
         padding: 10.72% 0;
-        width: 56%;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: 2;
     }
-}
-
-.hero__img {
-    width: 100%;
 }
 
 @media (max-width: 550px) {
@@ -214,10 +179,6 @@ nav {
     .hero__img {
         min-height: 630px;
     }
-}
-
-.hero__title {
-    margin-bottom: 14px;
 }
 
 @media (max-width: 550px) {
