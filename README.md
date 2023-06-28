@@ -9,3 +9,5 @@ Just open index.html in your favourite browser ⬅️
 1. Углубиться в html;
 2. Углубиться в css;
 3. Научиться основным принципам семантичной, валидной, гибкой верстки;
+
+Tailwind v.3.3.2
