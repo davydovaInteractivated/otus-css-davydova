@@ -5,7 +5,8 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "build": "webpack -c webpack.config.js",
+    "serve": "webpack serve --mode development -c webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -21,8 +22,13 @@
     "lodash": "^4.17.21"
   },
   "devDependencies": {
+    "css-loader": "^6.8.1",
+    "html-loader": "^4.2.0",
+    "html-webpack-plugin": "^5.5.3",
     "prettier": "^2.8.8",
+    "style-loader": "^3.3.3",
     "webpack": "^5.88.1",
-    "webpack-cli": "^5.1.4"
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
   }
 }

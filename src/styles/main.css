@@ -170,7 +170,7 @@ nav {
 }
 
 .hero__img {
-    background-image: url('/assets/img/inside-weather.jpg');
+    background-image: url('../assets/img/inside-weather.jpg');
     background-position: left;
     background-repeat: no-repeat;
     background-size: cover;
