@@ -19,8 +19,12 @@ module.exports = {
         loader: 'html-loader',
       },
       {
-        test: /\.css$/,
-        use: ['style-loader', 'css-loader'],
+        test: /\.(c|sa|sc)ss$/,
+        use: [
+          'style-loader',
+          'css-loader',
+          'sass-loader',
+        ],
       },
       {
         test: /\.(png|gif|jpg|jpeg)$/,
@@ -32,9 +36,9 @@ module.exports = {
       {
         test: /\.(woff(2)?|eot|ttf|otf)$/,
         type: 'asset/resource',
-        // generator: {
-        //     filename: 'fonts/[name]-[hash][ext]',
-        // },
+        generator: {
+            filename: 'fonts/[name]-[hash][ext]',
+        },
       },
       {
         test: /\.svg$/,

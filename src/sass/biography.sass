@@ -1,0 +1,126 @@
+.biography
+    width: 100%
+    min-width: calc(320px + 36px)
+    display: flex
+    align-items: center
+    justify-content: center
+
+@media (max-width: $break-point-mobile)
+    .biography
+        margin: 0 auto 80px
+
+@media (min-width: $break-point-desktop)
+    .biography
+        margin: 0 auto 169px
+
+.biography__wrapper
+    max-width: 1175px
+    display: flex
+    align-items: flex-start
+
+@media (max-width: $break-point-mobile)
+    .biography__wrapper
+        position: relative
+        flex-direction: column-reverse
+        width: 100%
+
+@media (min-width: $break-point-desktop)
+    .biography__wrapper
+        width: 81.6%
+
+.biography__img
+    min-height: 400px
+
+@media (max-width: $break-point-mobile)
+    .biography__img
+        width: 100%
+
+@media (min-width: $break-point-desktop)
+    .biography__img
+        width: 47.06%
+
+.biography__title
+    align-self: flex-start
+
+@media (max-width: $break-point-mobile)
+    .biography__title
+        position: absolute
+        top: 0
+        right: 18px
+
+@media (min-width: $break-point-desktop)
+    .biography__title
+        position: relative
+        top: 33.8px
+        margin-right: 44px
+        transform: rotate(-90deg)
+
+@media (max-width: $break-point-mobile)
+    .biography__text
+        display: flex
+        flex-direction: column
+        padding: 0 18px
+
+@media (min-width: $break-point-desktop)
+    .biography__text
+        flex-basis: 40.44%
+        align-self: center
+
+@media (max-width: $break-point-mobile)
+    .biography__text-title
+        order: 1
+        margin-bottom: 36px
+
+        &::before
+            content: '-'
+
+        br
+            display: none
+
+@media (min-width: $break-point-desktop)
+    .biography__text-title
+        margin-bottom: 25px
+
+@media (max-width: $break-point-mobile)
+    .biography__text-list
+        margin-bottom: 57px
+
+        br
+            display: none
+
+@media (min-width: $break-point-desktop)
+    .biography__text-list
+        margin-bottom: 45px
+
+.biography__text-list_item
+    font-size: 1.13rem
+    font-weight: 500
+
+@media (max-width: $break-point-mobile)
+    .biography__text-list_item::before
+        content: '-'
+
+@media (min-width: $break-point-desktop)
+    .biography__text-list_item
+        display: inline-block
+
+        &:not(&:first-child, &:last-child):after
+            content: '\00A0\00A0\002F'
+
+.biography__text-paragraph
+    color: #0d0d0d
+
+@media (max-width: $break-point-mobile)
+    .biography__text-paragraph
+        font-family: 'Bitter-Light'
+        font-size: 1.875rem
+        margin-bottom: 41px
+
+@media (min-width: $break-point-desktop)
+    .biography__text-paragraph
+        font-size: 1.625rem
+
+        &:before
+            content: '\2013'
+            display: block
+            color: #0d0d0d

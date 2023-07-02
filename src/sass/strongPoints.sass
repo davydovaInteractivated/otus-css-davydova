@@ -1,0 +1,108 @@
+.strong-points
+    min-width: calc(320px + 36px)
+    max-width: 1440px
+    width: 100%
+    margin: 0 auto
+    overflow: auto
+    display: grid
+    gap: 30px
+    grid-template-rows: repeat(2, auto)
+
+@media (max-width: $break-point-mobile)
+    .strong-points
+        position: relative
+        margin-bottom: calc(74px + 81px) /** +Bottom nav. */
+        padding-top: 118px
+        align-items: flex-start
+        grid-template-columns: 196px repeat(3, 300px)
+
+@media (min-width: $break-point-desktop)
+    .strong-points
+        margin-bottom: 80px
+        align-items: flex-end
+        grid-template-columns: repeat(2, 351px) 395px 351px
+
+.strong-points__title
+    grid-row: 1
+
+@media (max-width: $break-point-mobile)
+    .strong-points__title
+        grid-column: 1
+        position: absolute
+        top: -120px
+        right: 20px
+
+@media (min-width: $break-point-desktop)
+    .strong-points__title
+        transform: rotate(-90deg)
+        width: fit-content
+        position: relative
+        top: 62px
+        left: 328px
+        grid-column: 1/5
+
+@media (max-width: $break-point-mobile)
+    .strong-points__img
+        height: 450px
+
+@media (min-width: $break-point-desktop)
+    .strong-points__img
+        transition: transform .3s ease-out
+
+    .strong-points__img:hover
+        transform: scale(.9)
+
+.strong-points__list-wrapper
+    display: flex
+    flex-direction: column
+
+@media (max-width: $break-point-mobile)
+    .strong-points__list-wrapper
+        order: -1
+
+@media (min-width: $break-point-desktop)
+    .strong-points__list-wrapper
+        align-items: center
+
+@media (max-width: $break-point-mobile)
+    .strong-points__list-title
+        margin-bottom: 14px
+        position: absolute
+        top: 36px
+
+@media (min-width: $break-point-desktop)
+    .strong-points__list-title
+        margin-bottom: 28px
+
+.strong-points__list-item
+    font-family: 'Bitter-Regular'
+
+@media (max-width: $break-point-mobile)
+    .strong-points__list-item
+        font-size: 1.5rem
+        line-height: 1.5
+
+@media (min-width: $break-point-desktop)
+    .strong-points__list-item
+        font-size: 2.12rem
+
+@media (max-width: $break-point-mobile)
+    .strong-points__list
+        align-self: center
+
+@supports not (display: grid)
+    .strong-points
+        position: relative
+        padding: 44px 0
+        display: flex
+        justify-content: space-between
+
+        &__title
+            position: absolute
+            top: 48px
+
+        &__img
+            flex-basis: 351px
+
+        &__list-wrapper
+            flex-basis: 395px
