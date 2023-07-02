@@ -2,9 +2,8 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  mode: 'development',
+  mode: 'production',
   target: 'web',
-  devtool: 'source-map',
   entry: './src/index.js',
   output: {
     filename: '[name].[hash:8].js',
@@ -52,11 +51,4 @@ module.exports = {
         filename: 'index.html',
     }),
   ],
-
-  devServer: {
-    compress: false,
-    open: true,
-    port: 3000,
-    hot: true,
-  }
 };
