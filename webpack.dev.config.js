@@ -1,3 +1,4 @@
+/** use strict */
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
@@ -23,6 +24,19 @@ module.exports = {
         use: [
           'style-loader',
           'css-loader',
+          {
+            loader: 'postcss-loader',
+            options: {
+              postcssOptions: {
+                plugins: [
+                  'autoprefixer',
+                  'postcss-preset-env',
+                  // 'postcss-deadcss',
+                  'at-rule-packer',
+                ],
+              },
+            },
+          },
           'sass-loader',
         ],
       },
