@@ -1,0 +1,35 @@
+@import './fonts.sass'
+@import './reset.sass'
+@import './variables.sass'
+
+html
+    scroll-behavior: smooth
+
+body
+    font-family: 'Roboto', sans-serif
+    font-weight: normal
+    font-size: 16px
+    line-height: 1.2
+
+    /* Полоса прокрутки */
+    &::-webkit-scrollbar-track
+        background: transparent
+
+p
+    font-family: 'Bitter-Regular'
+    font-size: 2rem
+
+/** BEM */
+@import './bem'
+/** Navigation */
+@import './nav'
+/** Hero Section */
+@import './hero'
+/** Biography Section */
+@import './biography'
+/** Designers Section */
+@import './designers'
+/** Testimonials Section */
+@import './testimonials'
+/** Strong Points Section */
+@import './strongPoints'

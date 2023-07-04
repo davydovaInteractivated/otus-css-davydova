@@ -1,0 +1,81 @@
+.designers
+    min-width: calc(320px + 36px)
+    max-width: 1440px
+    overflow: auto
+
+@media (max-width: $break-point-mobile)
+    .designers
+        margin-bottom: 80px
+
+@media (min-width: $break-point-desktop)
+    .designers
+        padding-left: 30px
+        margin: 0 auto 150px
+        width: 94.84%
+
+.designers__wrapper
+    display: grid
+
+@media (max-width: $break-point-mobile)
+    .designers__wrapper
+        grid-auto-columns: 320px
+        gap: 21px
+
+@media (min-width: $break-point-desktop)
+    .designers__wrapper
+        width: 100%
+        min-width: 1337px
+        grid-template-columns: repeat(4, calc((100% - 90px) / 4))
+        grid-auto-columns: calc((100% - 90px) / 4)
+        gap: 30px
+
+.designers__title
+    grid-row: 1
+
+@media (min-width: $break-point-desktop)
+    .designers__title
+        transform: rotate(-90deg) translate(-94px, -12px)
+        display: inline-block
+        grid-column: 3/5
+        align-self: end
+        justify-self: center
+
+@media (max-width: $break-point-mobile)
+    .designers__title
+        margin-left: 18px
+
+.designers__card
+    grid-row: 2
+    display: flex
+    flex-direction: column
+    align-self: flex-end
+
+@media (max-width: $break-point-mobile)
+    .designers__card
+        overflow: hidden
+
+.designers__card-main
+    margin-left: 18px
+
+@media (min-width: $break-point-desktop)
+    .designers__card-main
+        grid-column: span 2
+
+    .designers__card-main .designers__card-description
+        transform: translateX(50%)
+
+.designers__card-photo
+    margin-bottom: 24px
+
+@media (max-width: $break-point-mobile)
+    .designers__card-photo
+        width: fit-content
+        height: 438px
+
+@media (min-width: $break-point-desktop)
+    .designers__card-photo
+        width: 100%
+
+.designers__card-title
+    font-size: 1rem
+    text-transform: uppercase
