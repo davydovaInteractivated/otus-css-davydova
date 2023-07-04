@@ -1,0 +1,26 @@
+{
+  "name": "otus-css-davydova",
+  "version": "1.0.0",
+  "description": "For ma html/css skills updating 🤫",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davydovaInteractivated/otus-css-davydova.git"
+  },
+  "author": "Davydova A.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davydovaInteractivated/otus-css-davydova/issues"
+  },
+  "homepage": "https://github.com/davydovaInteractivated/otus-css-davydova#readme",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "prettier": "^2.8.8"
+  }
+}
