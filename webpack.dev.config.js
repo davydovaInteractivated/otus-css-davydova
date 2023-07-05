@@ -4,7 +4,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   mode: 'development',
-  target: 'web',
   devtool: 'source-map',
   entry: './src/index.js',
   output: {
@@ -27,6 +26,7 @@ module.exports = {
           {
             loader: 'postcss-loader',
             options: {
+              sourceMap: true,
               postcssOptions: {
                 plugins: [
                   'autoprefixer',
@@ -41,7 +41,7 @@ module.exports = {
         ],
       },
       {
-        test: /\.(png|gif|jpg|jpeg)$/,
+        test: /\.(png|gif|jpe?g|webp)$/,
         type: 'asset/resource',
         // generator: {
         //     filename: 'images/[name]-[hash][ext]',

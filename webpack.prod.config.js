@@ -25,6 +25,7 @@ module.exports = {
           {
             loader: 'postcss-loader',
             options: {
+              sourceMap: true,
               postcssOptions: {
                 plugins: [
                   'autoprefixer',
@@ -39,7 +40,7 @@ module.exports = {
         ],
       },
       {
-        test: /\.(png|gif|jpg|jpeg)$/,
+        test: /\.(png|gif|jpe?g|webp)$/,
         type: 'asset/resource',
         generator: {
             filename: 'images/[name]-[hash][ext]',
@@ -58,7 +59,7 @@ module.exports = {
               speed: 4,
             },
             webp: {
-              quality: 75,
+              quality: 90,
             },
           },
         }],
@@ -67,14 +68,14 @@ module.exports = {
         test: /\.(woff(2)?|eot|ttf|otf)$/,
         type: 'asset/resource',
         generator: {
-            filename: 'fonts/[name]-[hash][ext]',
+          filename: 'fonts/[name]-[hash][ext]',
         },
       },
       {
         test: /\.svg$/,
         type: 'asset/resource',
         generator: {
-            filename: 'icons/[name]-[hash:5][ext]',
+          filename: 'icons/[name]-[hash:5][ext]',
         },
       },
     ],
@@ -82,8 +83,8 @@ module.exports = {
 
   plugins: [
     new HtmlWebpackPlugin({
-        template: path.resolve(__dirname, './src/index.html'),
-        filename: 'index.html',
+      template: path.resolve(__dirname, './src/index.html'),
+      filename: 'index.html',
     }),
   ],
 };
